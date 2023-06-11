@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employe Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Employe Portal</h1></header>
+    
+    <main>
+        <div class="container">
+            <form class="form">
+                <div class="form-div">
+                    <label for="EId">EID</label>
+                    <input type="number" name="EId" id="EId" placeholder="Enter your ID">
+                </div>
+
+                <div class="form-div tooltip">
+                    <label for="name">Name</label>
+                    <input class="input-name" type="text" name="name" id="name" placeholder="Enter Your Name">
+                    <span id="toolTipText">Enter your name in the order of "FirstName LastName"</span>
+                </div>
+
+                <div class="form-div">
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age"  placeholder="Enter your Age">
+                </div>
+
+                <div class="form-div">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender"placeholder="Select Gender">
+                        <option value=""></option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </form>
+
+            <div>
+                <div>
+                    <button type="button" id="btn-lappy" class="btn btn-sucess" onclick="addOnClick()">Add</button>
+                </div> 
+            </div>               
+            
+        </div>
+        
+
+        <div class="container">
+            <div id="table"></div>
+        </div>
+        
+    </main>
+
+    <script src="script.js"></script>
+
+
+    
+</body>
+
+</html>

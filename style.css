@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Bree+Serif&family=Josefin+Slab&family=Lato&family=Open+Sans:wght@300;400;600&family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: "Roboto";
+
+}
+
+h1{
+    margin: 10px auto;
+    text-align: center;
+    background: #ff5c00;
+    color: white;
+    padding: 40px 0;
+}
+
+.container{
+    height: auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    width: 75vw;
+    margin: auto;
+    
+} 
+
+.form-div{
+    display: flex;
+    flex-direction: column;
+    background-color: #ff5c00;
+    /* background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%) ; */
+    padding: 25px 10px; 
+    width:17em; 
+}
+
+.form::before{
+    content: "";
+    
+    position: absolute;
+    
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+input,select{
+    height: 40px;
+    font-size: 16px;
+    font-family:'Roboto' ;
+    letter-spacing: 1px;
+    padding: 0 10px;
+    /* border: 1px solid white; */
+    outline: none;
+    border: 2px solid black;
+
+}
+
+label{
+    margin: 5px 0;
+    font-family: roboto;
+    font-weight: bold;
+}
+
+.btn{
+    height: 40px;
+    width:124px;
+    font-size: large;
+    font-family:'Roboto';
+    margin: 5px auto;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 7px;
+
+}
+
+.btn-sucess{
+    background-color: green;
+    color: white;
+    margin: 20px auto;
+}
+
+.delete{
+    background-color: red;
+    color: white;
+}
+
+.tooltip {
+    position: relative;
+    
+}
+
+#toolTipText{
+    /* position: absolute; */
+    transform: translatex(43px);
+    margin-top: 2px;
+    background-color: #fff;
+    color: black;
+    border: 1px solid black;
+    /* padding: 10px 15px; */
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#toolTipText::before{
+    
+    position:absolute;
+    transform: translatex(43px);
+    border: 15px solid;
+
+}
+
+
+
+.tooltip:hover #toolTipText {
+    visibility: visible;
+    opacity: 1;
+}
+
+table{
+    /* width: 100%; */
+    border-collapse: collapse;
+    width: 75vw;
+    margin: 0 12.5vw;
+}
+
+th{
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: #ff5c00;
+    height: 60px;
+}
+
+td{
+    border: 2px solid black;
+}
+
+
+
+
+
